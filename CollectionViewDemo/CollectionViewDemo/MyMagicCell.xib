@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyMagicCell" id="gTV-IL-0wX" customClass="MyMagicCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-NA-feM">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image000.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mdh-Vs-LQT">
+                        <rect key="frame" x="-50" y="-50.5" width="300" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="WtJ-iB-iVd"/>
+                            <constraint firstAttribute="width" secondItem="Mdh-Vs-LQT" secondAttribute="height" multiplier="1000:667" id="fxe-NN-fST"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="观看美景" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q27-HT-uVx">
+                        <rect key="frame" x="15" y="14" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ybt-NA-feM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="50s-Ys-dZK"/>
+                <constraint firstItem="ybt-NA-feM" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="Tjk-Q9-QQU"/>
+                <constraint firstItem="ybt-NA-feM" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="U7p-mS-eHd"/>
+                <constraint firstItem="ybt-NA-feM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mLc-nl-5We"/>
+                <constraint firstItem="Mdh-Vs-LQT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="q15-A3-QXn"/>
+                <constraint firstItem="Mdh-Vs-LQT" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xHc-I2-dKW"/>
+            </constraints>
+            <size key="customSize" width="133" height="85"/>
+            <connections>
+                <outlet property="myACParallaxView" destination="ybt-NA-feM" id="f7L-H3-Tqy"/>
+                <outlet property="myImageView" destination="Mdh-Vs-LQT" id="h5D-d1-O4h"/>
+                <outlet property="myLabel" destination="q27-HT-uVx" id="wKV-16-95B"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="230"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image000.jpg" width="1000" height="667"/>
+    </resources>
+</document>
